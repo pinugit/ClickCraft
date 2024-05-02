@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn_primary {
+    @apply bg-[--bg-secondary] text-[--text-primary] py-1.5 px-3 rounded-md font-bold hover:bg-[--bg-tertiary] hover:text-[--text-primary] hover:shadow-lg focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[--accent-1] focus-visible:ring-offset-2 focus-visible:ring-offset-[--bg-primary];
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: #121315;
-    --bg-secondary: #191a1c;
+    --bg-primary: #313332;
+    --bg-secondary: #1b1a1c;
     --bg-tertiary: #0c0d0c;
     --text-primary: #e7e7e7;
     --text-secondary: #696b6c;

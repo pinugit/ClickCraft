@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export function ButtonComponent({ children }: { children: React.ReactNode }) {
   return (
-    <button className="">
-      <Link href=""> {children}</Link>
-    </button>
+    <Link href="" className="btn_primary">
+      {children}
+    </Link>
   );
 }
